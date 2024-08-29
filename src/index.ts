@@ -1,7 +1,8 @@
 // @ts-check
 
 class Demo {
-  private postfix = "nstration";
+  // private postfix = "nstration";
+  protected postfix = "nstration";
   protected prefix = "mini";
   public fix = "demo";
 }
@@ -15,7 +16,8 @@ class MegaDemo extends Demo {
   }
 }
 
-let tuple: readonly [boolean, string, number, string, number];
+// let tuple: readonly [boolean, string, number, string, number];
+let tuple: [boolean, string, number, string, number];
 tuple = [true, "Kaiba", 10, "Negative", 20];
 
 // TypeScript will show an error here,
